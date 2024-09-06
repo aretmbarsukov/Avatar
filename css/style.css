@@ -315,6 +315,10 @@
     margin-bottom: 40px;
 }
 
+.third{
+    padding: 75px 0 10px 0;
+}
+
 .third-blockquote{
     color: var(--navi-black-);
     text-align: justify;
