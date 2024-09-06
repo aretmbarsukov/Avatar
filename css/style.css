@@ -38,6 +38,13 @@
     margin-right: 188px;
 }
 
+.header-listt {
+    display: flex;
+    margin-left: 168px;
+    gap: 38px;
+    margin-right: 170px;
+}
+
 .header-link{
     color: var(--header-white-);
     text-align: center;
@@ -48,6 +55,10 @@
 }
 
 .header-list .header-item:first-child .header-link{
+    color: var(--header-lightblue-);
+}
+
+.header-listt .header-item:first-child .header-link {
     color: var(--header-lightblue-);
 }
 
@@ -166,12 +177,15 @@
 
 .cite-expression{
     color: var(--expression-black-);
-    text-align: center;
+    text-align: justify;
     font-family: Inter;
     font-size: 24px;
     font-weight: 400;
     line-height: normal;
-    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    margin: 16px 0 8px 0;
+    
 }
 
 .expression-img{
@@ -227,7 +241,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 16px 0 8px 0;
 }
 
 .second-img{
@@ -319,6 +335,7 @@
     line-height: normal;
     display: flex;
     justify-content: center;
+    margin: 16px 0 8px 0;
 }
 
 .third-img{
@@ -335,6 +352,8 @@
 
 .conteiner-footer{
     display: flex;
+    gap: 77px;
+    align-items: center;
     
 }
 
@@ -347,30 +366,64 @@
     background-color: var(--header-white-);
     width: 2px;
     height: 153px;
-    margin-left: 80px;
 }
 
 .footer-list{
-    display: block;
-    text-align: center;
-    /* margin-left: 80px; */
+    display: flex;
+    flex-direction: column;
     gap: 16px;
 }
 
 .footer-item{
+    width: 689px;
     display: flex;
     align-items: center;
 }
 
-.text-div{
-    background-color: var(--header-white-);
+.footer-text{
+    color: var(--header-white-);
+    width: 182px;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-list .footer-item:first-child .footer-text{
+    width: 107px;
+}
+
+.text-div {
+    width: 194px;
+    height: 0;
+    border-bottom: 2px dashed var(--header-white-);
+    margin: 0 20px;
+}
+
+.footer-list .footer-item:first-child .text-div{
     width: 269px;
-    height: 0px;
-    flex-shrink: 0;
-    stroke-width: 2px;
+}
+
+.footer-link{
+    color: var(--header-white-);
+    text-align: justify;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .footer-textt{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    color: var(--header-white-);
+    text-align: justify;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
